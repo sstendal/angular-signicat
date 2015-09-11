@@ -88,6 +88,7 @@ public class SamlServlet extends HttpServlet {
             "\n" +
             "    <script>\n" +
             "        var scope = parent.angular.element('signicat>iframe').scope();\n" +
+            "        // Calls the loginSuccess function in the angular directive for the element named 'signicat'\n" +
             "        scope.loginSuccess();\n" +
             "    </script>\n" +
             "\n" +
@@ -111,6 +112,7 @@ public class SamlServlet extends HttpServlet {
             "\n" +
             "    <script>\n" +
             "        var scope = parent.angular.element('signicat>iframe').scope();\n" +
+            "        // Calls the loginAborted function in the angular directive for the element named 'signicat'\n" +
             "        scope.loginAborted();\n" +
             "    </script>\n" +
             "\n" +

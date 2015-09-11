@@ -25,12 +25,14 @@ angular.module('ng-signicat', [])
                     el.show();
                 });
 
+                // The loginSuccess function is called from the javascript that is returned by the servlet in SamlServlet.java
                 scope.loginSuccess = function() {
                     el.hide();
                     scope.url = undefined;
                     scope.$emit('signicat-login-success');
                 };
 
+                // The loginAborted function is called from the javascript that is returned by the servlet in SamlServlet.java
                 scope.loginAborted = function() {
                     el.hide();
                     scope.url = undefined;
